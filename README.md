@@ -14,6 +14,17 @@ const store = createStore(radhoc(reducer))
 export default store
 ```
 
+Then, you dispatch any action with an `update` key.
+
+```javascript
+store.dispatch({
+  type: 'RADHOC',
+  update: {
+    rad: 'hoc'
+  }
+})
+```
+
 ## What It Does
 
 Radhoc is a higher-order reducer. It listens for a particular `action.type` and then returns the next state (more details below). If the `action.type` is anything else, it simply returns the reducer it takes as an argument, passing `state` and `action` to it.
