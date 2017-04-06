@@ -2,12 +2,24 @@
 
 Add an _ad hoc_ case to your Redux reducer.
 
+## Install
+
+```
+npm install --save-dev radhoc
+```
+
+or
+
+```
+yarn add radhoc -D
+```
+
 ## Usage
 
 ```javascript
 import { createStore } from 'redux'
 import reducer from './reducers'
-import radhoc from './helpers/radhoc'
+import radhoc from 'radhoc'
 
 const store = createStore(radhoc(reducer))
 
