@@ -4,8 +4,5 @@
   "description": "Adds adhoc cases to your Redux reducer",
   "main": "src/index.js",
   "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (http://kyleshevlin.com)",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "^19.0.2"
-  }
+  "license": "MIT"
 }
