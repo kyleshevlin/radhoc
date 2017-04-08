@@ -1,11 +1,17 @@
-const radhoc = (reducer, name = false) => (state, action) => {
-  let radhocType = 'RADHOC'
+const defaultActionType = 'RADHOC'
 
-  if (name && typeof name === 'string') {
-    radhocType = `RADHOC_${name.toUpperCase()}`
+export function setActionType (actionName) {
+  if (actionName && typeof actionName === 'string') {
+    return `${defaultActionType}_${actionName.toUpperCase()}`
+  } else {
+    return defaultActionType
   }
+}
 
-  if (action.type === radhocType) {
+const radhoc = (reducer, actionName = '') => (state, action) => {
+  const type = setActionType(actionName)
+
+  if (type === action.type) {
     return Object.assign({}, state, action.update)
   }
 
