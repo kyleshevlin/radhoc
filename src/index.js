@@ -11,7 +11,7 @@ export function setActionType (actionName) {
 const radhoc = (reducer, actionName = '') => (state, action) => {
   const type = setActionType(actionName)
 
-  if (type === action.type) {
+  if (type === action.type && typeof action.update === 'object') {
     return Object.assign({}, state, action.update)
   }
 
