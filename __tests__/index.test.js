@@ -1,13 +1,13 @@
-import radhoc, { setActionType } from '../src'
+import radhoc, { defaultActionType, setActionType } from '../src'
 
 describe('setActionType', () => {
   it('returns RADHOC if no args', () => {
-    expect(setActionType()).toEqual('RADHOC')
+    expect(setActionType()).toEqual(defaultActionType)
   })
 
   it('appends _actionName', () => {
     const type = setActionType('foo')
-    expect(type).toEqual('RADHOC_FOO')
+    expect(type).toEqual(`${defaultActionType}_FOO`)
   })
 })
 
@@ -16,7 +16,7 @@ describe('radhoc', () => {
     const mockFn = jest.fn()
     const state = {}
     const action = {
-      type: 'RADHOC',
+      type: defaultActionType,
       update: { test: 'radhoc' }
     }
     const expectedState = { test: 'radhoc' }
@@ -41,7 +41,7 @@ describe('radhoc', () => {
     it('action.update is not an object', () => {
       const mockFn = jest.fn()
       const state = {}
-      const action = { type: 'RADHOC', update: 'string' }
+      const action = { type: defaultActionType, update: 'string' }
 
       radhoc(mockFn)(state, action)
 

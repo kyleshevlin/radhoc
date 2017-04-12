@@ -1,4 +1,4 @@
-const defaultActionType = 'RADHOC'
+export const defaultActionType = 'RADHOC'
 
 export function setActionType (actionName) {
   if (actionName && typeof actionName === 'string') {
