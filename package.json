@@ -7,9 +7,14 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./src",
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "validate": "npm-run-all --parallel lint test"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "yarn run validate"
+    }
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -21,6 +26,8 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jest": "^19.0.2"
+    "ghooks": "^2.0.0",
+    "jest": "^19.0.2",
+    "npm-run-all": "^4.0.2"
   }
 }
