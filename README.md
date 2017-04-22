@@ -1,6 +1,7 @@
 # Radhoc
 
 [![Build Status](https://travis-ci.org/kyleshevlin/radhoc.svg?branch=master)](https://travis-ci.org/kyleshevlin/radhoc)
+[![codecov](https://codecov.io/gh/kyleshevlin/radhoc/branch/master/graph/badge.svg)](https://codecov.io/gh/kyleshevlin/radhoc)
 
 Add an _ad hoc_ case to your Redux reducer.
 
