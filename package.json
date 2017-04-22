@@ -2,7 +2,7 @@
   "name": "radhoc",
   "version": "0.1.0",
   "description": "Adds adhoc cases to your Redux reducer",
-  "main": "dist/index.umd.js",
+  "main": "dist/index.js",
   "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (http://kyleshevlin.com)",
   "license": "MIT",
   "files": [
