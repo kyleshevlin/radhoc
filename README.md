@@ -1,5 +1,7 @@
 # Radhoc
 
+[![Build Status](https://travis-ci.org/kyleshevlin/radhoc.svg?branch=master)](https://travis-ci.org/kyleshevlin/radhoc)
+
 Add an _ad hoc_ case to your Redux reducer.
 
 ## Install
