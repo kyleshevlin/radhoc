@@ -13,3 +13,4 @@ script:
   - yarn run validate
 after_success:
   - yarn run report-coverage
+  - yarn run release
