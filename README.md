@@ -42,7 +42,7 @@ store.dispatch({
 
 ## What It Does
 
-Radhoc is a higher-order reducer. It listens for a particular `action.type` and then returns the next state (more details below). If the `action.type` is anything else, it simply returns the reducer it takes as an argument, passing `state` and `action` to it.
+Radhoc is a higher-order function for Redux reducers. It listens for a specified `action.type` and then returns the next state (more details below). If the `action.type` is anything else, it simply returns the reducer it takes as an argument, passing `state` and `action` to it.
 
 ## API
 
