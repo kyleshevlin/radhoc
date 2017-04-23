@@ -1,6 +1,6 @@
 {
   "name": "radhoc",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "Adds adhoc cases to your Redux reducer",
   "main": "dist/index.js",
   "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (http://kyleshevlin.com)",
@@ -20,8 +20,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "release": "semantic-release-cli pre && yarn publish && semantic-release-cli post",
-    "validate": "npm-run-all --parallel lint test build"
+    "validate": "npm-run-all --parallel lint test build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
     "commitizen": {
@@ -54,5 +54,9 @@
     "semantic-release": "^6.3.2",
     "validate-commit-msg": "^2.12.1",
     "webpack": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyleshevlin/radhoc.git"
   }
 }
