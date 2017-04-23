@@ -1,6 +1,6 @@
 {
   "name": "radhoc",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "Adds adhoc cases to your Redux reducer",
   "main": "dist/index.js",
   "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (http://kyleshevlin.com)",
